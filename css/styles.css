@@ -4,7 +4,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: auto;
+    background-size: cover;
 }
 .bg-primary{
     background: rgb(244,180,80);
