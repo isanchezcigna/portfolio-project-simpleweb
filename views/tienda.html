@@ -1,0 +1,32 @@
+<main>
+    <section id="middle" class="bg-headline">
+        <div class="headline_inner d-flex justify-content-start py-5 px-5">
+            <h1 class="text-shadow">Tienda</h1>
+        </div>
+    </section>
+    <section id="breadcrum">
+        <div class="breadcrum d-flex justify-content-start bg-white py-2 px-5 border-top border-bottom">
+            <nav class="breadcrum">
+                <a href="#">Inicio</a> | Tienda
+            </nav>
+        </div>
+    </section>
+    <section class="bg-white border-bottom" id="main-content">
+        <div class="d-flex flex-wrap justify-content-between px-5 pt-4 breadcrum">
+            <div class="justify-items-start ">
+                <select class="form-select breadcrum" aria-label="Ordenador" disabled>
+                    <option selected>Orden Predeterminado</option>
+                    <option value="1">Ordenar por Popularidad</option>
+                    <option value="2">Ordenar por Fecha</option>
+                    <option value="3">Ordenar por Disponibilidad</option>
+                    <option value="4">Ordenar por Precio</option>
+                </select>
+            </div>
+            <div class="justify-items-end">Mostrando 6 de 6 resultados</div>
+        </div>
+        <div class="album py-5 bg-white">
+            <div class="container" >
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="tienda-content"></div>
+            </div>
+        </div>
+    </section>

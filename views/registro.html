@@ -1,0 +1,102 @@
+<section id="middle" class="bg-headline">
+	<div class="headline_inner d-flex justify-content-start py-5 px-5">
+		<h1 class="text-shadow">Carro</h1>
+	</div>
+</section>
+<section id="breadcrum" class="border-bottom">
+	<div class="breadcrum d-flex justify-content-start bg-white py-2 px-5 ">
+		<nav class="breadcrum">
+			<a href="#" onclick="loadView('tienda')">Tienda</a>
+		</nav>
+	</div>
+</section>
+<section id="main" class="bg-white px-5 py-3">
+	<div class="container">
+		<div class="row g-5">
+			<div class="col-md-7 col-lg-8">
+				<h4 class="mb-3">Registro Usuario</h4>
+
+				<form id="form-checkout" class="row g-3 needs-validation" novalidate>
+					<div class="row g-3">
+						<div class="col-sm-6">
+							<label for="invoice-firstName" class="form-label">Nombre</label>
+							<input type="text" class="form-control" id="invoice-firstName" placeholder="" value="" required>
+							<div class="invalid-feedback">
+								Nombre requerido.
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<label for="invoice-lastName" class="form-label">Apellido</label>
+							<input type="text" class="form-control" id="invoice-lastName" placeholder="" value="" required="">
+							<div class="invalid-feedback">
+								Apellido requerido.
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="invoice-email" class="form-label">Correo</label>
+							<input type="email" class="form-control" id="invoice-email" placeholder="correo@ejemplo.com" required="">
+							<div class="invalid-feedback">
+								Ingrese correo válido.
+							</div>
+						</div>
+
+                        <div class="col-12">
+							<label for="invoice-phone" class="form-label">Número de celular</label>
+							<input type="phone" class="form-control" id="invoice-phone" placeholder="XXXXXXXXX" required="">
+							<div class="invalid-feedback">
+								Ingrese número de celular válido.
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="invoice-address" class="form-label">Dirección</label>
+							<input type="text" class="form-control" id="invoice-address" placeholder="San Carlos 1234"
+								required="">
+							<div class="invalid-feedback">
+								Favor introduzca su dirección.
+							</div>
+						</div>
+
+						<div class="col-12">
+							<label for="invoice-addressExtra" class="form-label">Complemento <span
+									class="text-muted">(Opcional)</span></label>
+							<input type="text" class="form-control" id="invoice-addressExtra" placeholder="Depto. 2 Edificio B">
+						</div>
+
+						<div class="col-md-5">
+							<label for="invoice-city" class="form-label">Ciudad</label>
+							<select class="form-select" id="invoice-city" required="" disabled>
+								<option value="">Seleccione ciudad...</option>
+								<option selected >Santiago</option>
+							</select>
+							<div class="invalid-feedback">
+								Seleccione ciudad
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<label for="invoice-comuna" class="form-label">Comuna</label>
+							<select class="form-select" id="invoice-comuna" required="">
+								<option value="" selected disabled>Seleccione comuna...</option>
+							</select>
+							<div class="invalid-feedback">
+								Seleccione comuna
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<label for="invoice-zipCode" class="form-label">Codigo Postal</label>
+							<input type="text" class="form-control" id="invoice-zipCode" placeholder="">
+							<div class="invalid-feedback">
+
+							</div>
+						</div>
+					</div>
+					<button class="w-25 btn btn-primary btn-lg" type="submit" onclick="validateForm()">Registrarse</button>								
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

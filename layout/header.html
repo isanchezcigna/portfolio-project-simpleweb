@@ -1,0 +1,38 @@
+<div id="top-menu" class="py-2">
+    <nav>
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <a class="nav-link" href="https://facebook.com/cholitostore.cl"><i class="fab fa-facebook"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link btn-circle btn-md bg-success active" href="#"><i class="fa fa-paw"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div id="main-menu" class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-0 bg-black bg-opacity-25 px-3">
+    <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="../img/logo-cholitostore-dark-60pc.png" onclick="loadView('inicio')" alt="SalvaPerritos">
+    </a>
+    <nav class="navbar navbar-expand-lg" id="nav-main-menu">
+        <ul class="navbar-nav nav-pills col-9 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="nav-item" onclick="loadView('inicio')"><a id="button-inicio" href="#" class="nav-link" aria-current="page">Inicio</a></li>
+            <li class="nav-item" onclick="loadView('tienda')"><a id="button-tienda" href="#" class="nav-link" aria-current="page">Tienda</a></li>
+            <li class="nav-item" onclick="loadView('nosotros')"><a id="button-nosotros" href="#" class="nav-link" aria-current="page">Nosotros</a></li>
+            <li class="nav-item" onclick="loadView('contacto')"><a id="button-contacto" href="#" class="nav-link" aria-current="page">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="col-md-3 text-end px-3">
+        <button type="button" class="btn btn-primary" onclick="loadView('cart')">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-badge-top" class="badge text-black px-0"></span>
+        </button>
+        <button type="button" id="login-button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar Sesion</button>
+    </div>
+</div>
